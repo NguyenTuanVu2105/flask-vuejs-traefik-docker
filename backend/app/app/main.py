@@ -7,6 +7,7 @@ app = Flask(__name__)
 # After creating the app, so that cors can import it
 from app import cors
 
+
 @app.route("/api/")
 def root():
     return jsonify({"message": "Hello World"})
