@@ -12,7 +12,7 @@ services:
       - "traefik.frontend.rule=PathPrefix:/api"
 
   frontend:
-    build: 
+    build:
       context: ./frontend
       args:
           FRONTEND_ENV: ${FRONTEND_ENV-production}
